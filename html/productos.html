@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Articulos de Maya</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/Maya.jpg" class="logoMaya"/>
+            <div>
+                <div class="btn_menu"><a>MENÚ</a></div>       
+                <nav  class="navegadores">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="novedades.html">Novedades</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <h1>Precios, productos y caracteristicas:</h1>
+    <section>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modificar Producto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form class="formtabla" action="">
+                        <label for="precio">Precio $</label>
+                        <input id="precio-modif" type="text" name="precio" value=" " placeholder="Precio"/>
+                        <label for="articulo">Artículo</label>
+                        <input id="articulo-modif" type="text" name="articulo" value=" " placeholder="articulo"/>
+                        <label form="caracteristicas">Características</label>
+                        <input id="caracteristicas-modif" type="text" name="caracteristicas" value=" " placeholder="caracteristicas"/>
+                        <label for="cantidad">Cantidad</label>
+                        <input id="cantidad-modif" type="text" name="cantidad" value=" " placeholder="cantidad"/>
+                        <label for="pago">Forma de pago</label>
+                        <input id="pago-modif" type="text" name="pago" value=" " placeholder="pago"/>
+                        <label for="envio">Envio</label>
+                        <input id="envio-modif" type="text" name="envio" value=" " placeholder="envio"/>
+                        <div id="resultado"></div>
+                        <input id="id-modificacion"  hidden>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button id="button-modificar" type="button">Cargar datos</button> 
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="cajacentral2">
+            <form class="formtabla" action="">
+                <label for="precio">Precio $</label>
+                <input id="precio" type="text" name="precio" value=" " placeholder="Precio"/>
+                <label for="articulo">Artículo</label>
+                <input id="articulo" type="text" name="articulo" value=" " placeholder="articulo"/>
+                <label form="caracteristicas">Características</label>
+                <input id="caracteristicas" type="text" name="caracteristicas" value=" " placeholder="caracteristicas"/>
+                <label for="cantidad">Cantidad</label>
+                <input id="cantidad" type="text" name="cantidad" value=" " placeholder="cantidad"/>
+                <label for="pago">Forma de pago</label>
+                <input id="pago" type="text" name="pago" value=" " placeholder="pago"/>
+                <label for="envio">Envio</label>
+                <input id="envio" type="text" name="envio" value=" " placeholder="envio"/>
+                <div id="result"></div>
+                <div class="botonestabla">
+                    <button id="cargardatos" type="button">Cargar datos</button> 
+                    <button id="cargarvarios" type="button">Añadir varios</button>
+                </div>
+            </form>
+            <div class="tabla">  
+                <form class="formtabla" action="">
+                    <label for="buscar">Buscar en la tabla</label>
+                    <input id="buscar" type="text" name="buscar" value="" placeholder="Busca tu producto"/>
+                    <button id="reset" type="button">Reset</button>
+                    <button id="btnbuscar" type="button">Buscar</button>
+                </form> 
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Precio $</th>
+                            <th>Artículo</th>
+                            <th>Características</th>
+                            <th>Cantidad</th>
+                            <th>Forma de Pago</th>
+                            <th>Envío</th>
+                            <th>Eliminar Prod</th>
+                            <th>Editar</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="tbdoy">  
+                    </tbody>
+                </table> 
+            </div>    
+            <div class="Solicituddeproducto">
+                <h2>Solicitar Producto</h2>
+                <form class="formtabla">
+                    <label>Nombre y Apellido</label>
+                    <input type="text" placeholder="Ingrese sus datos"/>
+                    <label>Articulo</label>
+                    <input type="text" placeholder="Ingrese articulo"/>
+                    <label>Dirección</label>
+                    <input type="text" placeholder="Ingrese dirección"/>
+                    <label>Teléfono</label>
+                    <input type="text" placeholder="Ingrese su teléfono"/>
+                    <label>Ingrese "f6h00l"</label>
+                    <input type="text" id="captcha" placeholder="Ingrese captcha" value= ""/>
+                    <label>Soy humano</label>
+                    <input type="checkbox" name="humano" value="Soy_humano"/>
+                    <button type="button" id="btn-enviar">Enviar</button>
+                    <p id="coincidencia"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div id="mostrardatos"></div>
+    
+    </body>
+    <footer>
+        <p>"Mejor precio del mercado y pronta entrega"</p>
+        <a href="https://www.facebook.com"><img src="../img/logofacebook.jpg"/>
+        </a>
+        <a href="https://www.instagram.com"><img src="../img/logoinstagram.jpg"/>
+        </a>
+    </footer>
+
+</html>
