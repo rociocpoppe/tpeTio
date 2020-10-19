@@ -1,0 +1,20 @@
+[0424/232354.964:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
+[0424/232355.071:ERROR:exception_snapshot_win.cc(98)] thread ID 10148 not found in process
+[0424/232355.018:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[0424/232355.104:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[0424/232355.104:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[0424/232355.104:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[0424/232355.104:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[0424/232355.104:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[0424/232355.104:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[0424/232355.104:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
+[0424/232355.104:ERROR:exception_snapshot_win.cc(98)] thread ID 4032 not found in process
+[0424/232355.104:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
+[0424/232355.104:ERROR:exception_snapshot_win.cc(98)] thread ID 7824 not found in process
+[0424/232355.027:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[0424/232355.104:ERROR:process_reader_win.cc(151)] SuspendThread: Acceso denegado. (0x5)
+[0424/232355.104:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
+[0424/232355.104:ERROR:exception_snapshot_win.cc(98)] thread ID 11228 not found in process
+[0424/232355.135:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
+[0424/232355.135:ERROR:exception_snapshot_win.cc(98)] thread ID 3480 not found in process
+[0702/193600.039:ERROR:crash_report_database_win.cc(428)] unexpected header
