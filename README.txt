@@ -1,0 +1,2 @@
+carpeta imagenes
+carpeta img
