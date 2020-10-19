@@ -6,3 +6,47 @@ body{
     width: 20px;
     height: 20px;
 }
+
+@media only screen and (min-width: 768px){ 
+    
+    .logo{
+        flex-direction: row;
+    }
+
+    .navegadores ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navegadores ul li{
+        justify-content: space-around;
+        padding:30px; 
+    }
+
+    .btn_menu {
+        display: none;
+     }
+     
+    .cajacentral{
+        flex-direction: row;
+    }
+
+    .imagenesdeMaya{
+        margin-top:180px;
+        margin-left:50px;
+    }
+
+    .cajacentral3 { 
+        flex-direction:row;  
+    }
+   
+    .imagenofertas img{
+        flex-direction:column;
+    }   
+
+    .tabla{
+        overflow-x: unset;
+    }
+}
+
+   
