@@ -1,8 +1,38 @@
+header {
+    width: 100%;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 30%;
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(238, 126, 34);
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.logoMaya {
+    width: 160px;
+    height: 80px;
+    padding: 1px;
+    border-radius: 20%;
+}
+
+.btn_menu {
+    color: red; 
+}
+
 body{
-    background-color:cadetblue;
+    background-color:yellow;
 }
 
 .logoFooter{
     width: 20px;
     height: 20px;
 }
+
+
