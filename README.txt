@@ -1,4 +1,4 @@
-PROYECTO TPE Tecnología de la Información en las Organizaciones!
+PROYECTO TPE Tecnología de la Información en las Organizaciones.
 
 Autores: Poppe Rocio, Walter Sofia, Neuville Franco, Almiron Cristian
 
